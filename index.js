@@ -42,4 +42,4 @@ app.listen(1111)
 bot.commands = new Discord.Collection()
 bot.aliases = new Discord.Collection()
 
-bot.login(``).catch(err => console.log(`НЕ могу зайти в дс`))
+bot.login(`TOKEN BOT`).catch(err => console.log(`НЕ могу зайти в дс`))
