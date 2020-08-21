@@ -1,9 +1,7 @@
 const Discord = require('discord.js')
 const express = require("express"); 
 const app = express();
-const fs = require('fs');
 const bot = new Discord.Client({disableMentions: "everyone"})
-global.bot = bot
     app.get("/stats",async(req,res)=>{
         let stats = []
         stats.push({ping: bot.ws.ping ,servers:  bot.guilds.cache.size , users: bot.users.cache.size, channels: {all: bot.channels.cache.size,voice:bot.channels.cache.filter(c => c.type == 'voice').size,text:bot.channels.cache.filter(c => c.type == 'voice').size}})
