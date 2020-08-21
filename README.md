@@ -7,3 +7,4 @@
 /cmds/info/commandsname Инфо о команде ![](https://cdn.discordapp.com/attachments/701802035921682590/746463096792547458/unknown.png)
 /guild/idserver Инфо о сервере ![](https://cdn.discordapp.com/attachments/701802035921682590/746463335809024042/unknown.png)
 /fetch/id Инфо про любого юзера ![](https://cdn.discordapp.com/attachments/701802035921682590/746463528785018921/unknown.png)
+[Discordserver](https://discord.gg/Eh9thsa)
