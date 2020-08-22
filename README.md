@@ -8,7 +8,7 @@
 /fetch/id Инфо про любого юзера ![](https://cdn.discordapp.com/attachments/701802035921682590/746463528785018921/unknown.png)
 В .env надо token=сюда токен бота prefix=префикс бота owner=ваш id s
 [Discordserver](https://discord.gg/Eh9thsa)
-Developer
+### Developer
 КотикD3V#0001 Owner
 𝑅 🍬𝐹 𝐿#5705 Owner 
  MrLivixx#0232 by commands handler 
