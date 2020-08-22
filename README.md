@@ -1,4 +1,3 @@
-# API
 Просто апи для бота сакура на express
 Для его работы надо скачать express discord.js
 Все что тут есть это
@@ -10,5 +9,6 @@
 В .env надо token=сюда токен бота prefix=префикс бота owner=ваш id s
 [Discordserver](https://discord.gg/Eh9thsa)
 Developer
-КотикD3V#0001 Onwer
-MrLivixx#0232 commands handler 
+КотикD3V#0001 Owner
+𝑅 🍬𝐹 𝐿#5705 Owner 
+ MrLivixx#0232 by commands handler 
