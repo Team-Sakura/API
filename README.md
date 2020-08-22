@@ -10,5 +10,5 @@
 В .env надо token=сюда токен бота prefix=префикс бота owner=ваш id s
 [Discordserver](https://discord.gg/Eh9thsa)
 Developer
-КотикD3V#0001 Developer
+КотикD3V#0001 Onwer
 MrLivixx#0232 commands handler 
