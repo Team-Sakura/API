@@ -40,6 +40,19 @@ usages: command.usages,
  category: command.category })
 res.json(await(cmdsname))
 });
+app.get("/dog",async(req,res)=>{
+let hartinka =[ 
+"https://random.dog/b1a59f58-452a-4d97-82bb-a70d75c33090.JPG",
+"https://random.dog/81b08531-03b2-4426-984d-0812cb7f9233.jpg",
+"https://random.dog/d6b5c865-7111-4508-a5a7-a5943d9546c9.jpeg",
+"https://random.dog/8b0f55b1-317d-49e4-b849-35df7c17ff2a.jpg",
+"https://random.dog/7cc55332-05b7-4006-be2a-848226b3ef95.JPG",
+.......
+];
+const random = Math.floor(Math.random() * (hartinka.length - 1));
+console.log(hartinka[random]);
+res.json(hartinka[random]);
+});
 app.get("/guild/:id",async(req,res)=>{
 let {id} = req.params;
 if(!id || !bot.guilds.cache.get(id)) return res.sendStatus(404);
