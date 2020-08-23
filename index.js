@@ -50,7 +50,6 @@ let hartinka =[
 .......
 ];
 const random = Math.floor(Math.random() * (hartinka.length - 1));
-console.log(hartinka[random]);
 res.json(hartinka[random]);
 });
 app.get("/guild/:id",async(req,res)=>{
@@ -77,12 +76,12 @@ bot.commands.set(props.name, props);
 const alias = props.aliases
 for (i = 0; i < alias.length; i++) {
 bot.aliases.set(alias[i], props);
-}
-})
-}) 
-}
-}) 
-})
+};
+});
+});
+};
+});
+});
 bot.on("message",message => {
 if (!message.content.startsWith(process.env.prefix)) return;
 const args = message.content.slice(process.env.prefix.length).trim().split(/ +/g);
@@ -90,7 +89,7 @@ const cmdName = args.shift().toLowerCase();
 const command = bot.commands.get(cmdName) || bot.commands.find(cmd => cmd.aliases && cmd.aliases.includes(cmdName));
 if(!command) return;
 if (command) command.run(bot,message,args);
-})   
+});
 app.listen(process.env.port);
-console.log(`Порт ${process.env.port}`)
+console.log(`Порт ${process.env.port}`);
 bot.login(process.env.token).catch(err => console.log(`Бот не смог зайти в дискорд`));
