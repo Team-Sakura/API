@@ -73,7 +73,7 @@ app.get("/fetchuser/:id",async(req,res)=>{
 });
 bot.commands = new Collection()
 bot.aliases = new Collection()
-fs.readdir('./cmds', (err, files) => {
+fs.readdir('./commands', (err, files) => {
     if (err) console.log(err)
 
     files.forEach((element,iterator) => {
