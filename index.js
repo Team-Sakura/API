@@ -81,12 +81,12 @@ fs.readdir('./commands', (err, files) => {
             fs.readdir(`./commands/${element}`,(err,sub_files)=>{
                 sub_files.forEach((elem,iterator)=>{
                     let props = require(`./commands/${element}/${elem}`);
-                    bot.commands.set(props.help.name, props);
-                    const alias = props.help.aliases
+                    bot.commands.set(props.name, props);
+                    const alias = props.aliases
                     for (i = 0; i < alias.length; i++) {
                         bot.aliases.set(alias[i], props);
                     }
-                    console.log(`[BOOT]${props.help.name} ✅`)
+                    console.log(`[BOOT]${props.name} ✅`)
                 })
             })
         }
