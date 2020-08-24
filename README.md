@@ -14,4 +14,4 @@
 
 𝑅 🍬𝐹 𝐿#5705 Owner 
 
-MrLivixx#0232 by commands handler 
+MrLivixx#0232 Owner
