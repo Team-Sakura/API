@@ -103,6 +103,6 @@ bot.on("message",message => {
     if (command) command.run(bot,message,args);
 
 });
-app.listen(process.env.token, () => console.log(`API сервер запушен на порте ${process.env.token}`));
+app.listen(process.env.token, () => console.log(`API сервер запушен на порте ${process.env.port}`));
 
 bot.login(process.env.token).catch(err => console.log(`Бот не смог зайти в дискорд`));
