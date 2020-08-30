@@ -43,7 +43,7 @@ app.get("/cmds/info/:id",async(req,res)=>{
 res.json(await(cmdsname))
 });
 
-app.get("/dog",async(req,res)=>{
+app.get("/dog",(req,res)=>{
 
 let hartinka =[ 
 "https://random.dog/b1a59f58-452a-4d97-82bb-a70d75c33090.JPG",
