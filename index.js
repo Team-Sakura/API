@@ -5,7 +5,7 @@ const app = express();
 require('dotenv').config();
 const bot = new Client({disableMentions: "everyone"});
 
-app.get("/stats",async(req,res)=>{
+app.get("/stats",(req,res)=>{
 let stats = [];
 
 stats.push({
@@ -20,7 +20,7 @@ stats.push({
 res.json(await(stats));
 });
 
-app.get("/status",async(req,res)=>{
+app.get("/status",(req,res)=>{
     res.json(String('Все работает'));
 });
 
