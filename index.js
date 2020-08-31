@@ -15,7 +15,7 @@ stats.push({
     channels:{
     all: bot.channels.cache.size,
     voice:bot.channels.cache.filter(c => c.type == 'voice').size,
-    text:bot.channels.cache.filter(c => c.type == 'voice').size}
+    text:bot.channels.cache.filter(c => c.type == 'text').size}
 });
 res.json(await(stats));
 });
