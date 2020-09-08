@@ -15,7 +15,7 @@ stats.push({
     channels:{
     all: bot.channels.cache.size,
     voice:bot.channels.cache.filter(c => c.type == 'voice').size,
-    text:bot.channels.cache.filter(c => c.type == 'voice').size}
+    text:bot.channels.cache.filter(c => c.type == 'text').size}
 });
 res.json(await(stats));
 });
@@ -103,6 +103,6 @@ bot.on("message",message => {
     if (command) command.run(bot,message,args);
 
 });
-app.listen(process.env.token, () => console.log(`API сервер запушен на порте ${process.env.port}`));
+app.listen(process.env.port, () => console.log(`API сервер запушен на порте ${process.env.port}`));
 
 bot.login(process.env.token).catch(err => console.log(`Бот не смог зайти в дискорд`));
