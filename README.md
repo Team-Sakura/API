@@ -10,7 +10,7 @@
 В .env надо token=сюда токен бота prefix=префикс бота owner=ваш id s
 [Discordserver](https://discord.gg/Eh9thsa)
 ### Developers
-КотикD3V#0001 
+Котик#0001 
 
 𝑅 🍬𝐹 𝐿#5705  
 
